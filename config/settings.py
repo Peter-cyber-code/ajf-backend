@@ -42,7 +42,9 @@ allowed_hosts = os.getenv(
     "127.0.0.1,localhost",
 )
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS + ["*"]
+
+"""ALLOWED_HOSTS = [
     host.strip()
     for host in os.getenv("ALLOWED_HOSTS", "").split(",")
     if host.strip()
@@ -60,7 +62,7 @@ if not ALLOWED_HOSTS:
     ALLOWED_HOSTS = [
         "127.0.0.1",
         "localhost",
-    ]
+    ]"""
 # ============================================================
 # APPLICATIONS
 # ============================================================
