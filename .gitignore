@@ -17,3 +17,5 @@ media/
 .idea/
 
 *.log
+
+data.json
